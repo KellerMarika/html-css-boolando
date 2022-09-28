@@ -91,6 +91,22 @@ main .articles{
     width: 100%;
     display: block;
 }
+
+.card-img .img-b{
+    position: absolute;
+    z-index: -1;
+    top:0;
+    left:0;
+    right: 0;
+}
+
+.card:hover .img-b{
+    z-index: 2;
+}
+.card:hover .like{
+    color: #FF0000;
+}
+
 .articles .title{
     text-transform: uppercase;
     font-size: var(--font-xs);
@@ -118,7 +134,10 @@ content: "\20AC";
     background-color: #FFFFFF;
     padding: 0px var(--space-s);
     font-size: 32px;
+    z-index: 3;
 }
+
+
 .card-tag{
     position: absolute;
     bottom:90px; 
