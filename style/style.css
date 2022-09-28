@@ -16,6 +16,12 @@
 
 /* space */
 --
+
+
+--font-small:14px
+--font-medium
+--font-large
+
 }
 
 *{
@@ -28,6 +34,39 @@
 }
  [class*="link"] li{
     display: inline-block;
+    list-style-type: none;
  }
+ [class*="link"] li a{
+    text-decoration: none;
+ }
+[class*="bar"]{
+    display: flex;
+    justify-content: space-between;
+}
 
- 
+[class*="bar"] *{
+    color: #FFFFFF;
+}
+header nav{
+    background-color:#FF6900;
+}
+
+footer{
+    background-color: #1A1A1A;
+}
+.nav-logo img{
+    height: 1.6rem;
+    
+}
+
+main .articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    flex-basis: 33%;
+}
+.card-img img{
+    width: 100%;
+}
