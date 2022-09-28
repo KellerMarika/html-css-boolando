@@ -4,3 +4,30 @@
     padding:0;
 }
 
+/* global var*/
+:root {
+
+    /* color*/
+--orange:#FF6900;
+--dark:#1A1A1A;
+--green:#008000;
+--red:#FF0000;
+--white: #FFFFFF;
+
+/* space */
+--
+}
+
+*{
+    border: 1px solid black;
+}
+/* global rules*/
+.container{
+    width: 920px;
+    margin: auto;
+}
+ [class*="link"] li{
+    display: inline-block;
+ }
+
+ 
