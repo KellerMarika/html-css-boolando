@@ -100,12 +100,18 @@ main .articles{
     display: block;
 }
 
+/* correzione: dare relative al contenitore immagine */
+.card-img{
+    position: relative;
+}
+/* e l'absolute all'immagine 2 */
 .card-img .img-b{
     position: absolute;
     z-index: -1;
     top:0;
-    left:0;
-    right: 0;
+/* l'absolute relativo al contenitore immagine mi permette di fittare le dimensioni dell'immagine al contenitore 100% funsiona anche se l'immagne è differente */
+    height: 100%;
+    width: 100%;
 }
 
 .card:hover .img-b{
@@ -149,7 +155,7 @@ content: "\20AC";
 .card-tag{
     position: absolute;
     bottom:90px; 
-    z-index: 4;
+    z-index: 3;
 }
 .card-tag>span{
     color: #FFFFFF;
