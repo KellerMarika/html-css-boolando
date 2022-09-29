@@ -23,7 +23,6 @@
 --font-xs:8px;
 --font-s:12px;
 --font-m:16px;
---font-l:24px;
 }
 
 /* global rules*/
@@ -109,7 +108,7 @@ main .articles{
 .card:hover .img-b{
     z-index: 2;
 }
-.card:hover .like{
+.like:hover{
     color: #FF0000;
 }
 
