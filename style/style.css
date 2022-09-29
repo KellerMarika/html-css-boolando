@@ -33,11 +33,12 @@
  [class*="link"] li{
     display: inline-block;
     list-style-type: none;
-    padding: 5px;
+    
  }
  [class*="link"] li a{
     text-decoration: none;
     font-size: var(--font-s);
+    padding: 5px;
  }
 [class*="bar"]{
     display: flex;
@@ -60,11 +61,13 @@ header nav{
     font-size: var(--font-s)
 
 }
-header>.container{
+nav{
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 4;
+    /* correzione se è fixed deve avere z-indez alto sennò viene nascosto da ciò che è stato aggiuto dopo */
 }
 .nav-bar *{
     line-height: 14px ;
@@ -146,6 +149,7 @@ content: "\20AC";
 .card-tag{
     position: absolute;
     bottom:90px; 
+    z-index: 4;
 }
 .card-tag>span{
     color: #FFFFFF;
